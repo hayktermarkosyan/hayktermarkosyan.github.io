@@ -11,11 +11,11 @@
     padding: 0;
 }
 
-img {
+.footerImg {
     margin: 15px;
 }
 
-img:hover {
+.footerImg:hover {
     width:35px;
     height: 35px;
     margin: 12.5px;
@@ -32,4 +32,11 @@ img:hover {
 
 .ta-center {
     text-align: center;
+}
+
+@media (max-width: 992px) {
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
 }

@@ -2,7 +2,7 @@ import './Home.css';
 
 function Home() {
     return (
-        <div className="container">
+        <div className="container mb-5">
             <hr/>
             <div className="col-md-8 offset-md-2">
                 <p>

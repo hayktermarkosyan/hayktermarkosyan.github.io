@@ -1,0 +1,53 @@
+.aboutMe {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.cardStyles {
+    background-color: #553D67;
+    margin-top: 100px;
+    width: 372px;
+    border: 2px solid white;
+}
+
+.myImgStyles {
+    width: 200px;
+    height: 300px;
+    margin: 0 0 0 86px;
+    padding: 0;
+}
+
+.card-text {
+    font-size: medium;
+}
+
+#skill {
+    background-color: #553D67;
+    color: white;
+    text-align: center;
+}
+
+.skillImg {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+#hobbie {
+    background-color: #553D67;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .custom {
+        margin-bottom: 100px!important;
+    }
+}
+
+@media (max-width: 576px) {
+    .cardStyles {
+        margin-left: 50px;
+    }
+}
