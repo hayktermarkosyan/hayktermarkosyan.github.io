@@ -17,7 +17,7 @@ function About() {
                         <h2 className="aboutMe">Skills</h2>
                         <ul 
                             className="list-group" 
-                            style={{border: 'none', width: '350px', margin: '30px 0 0 8px'}}
+                            style={{border: 'none', width: 'auto', margin: '30px auto 0 auto'}}
                         >
                             <li id="skill" className="list-group-item">
                             <img src={htmlIcon} className="skillImg" alt="htmlIcon"/>
@@ -88,7 +88,7 @@ function About() {
                         <h2 className="aboutMe" style={{marginTop: '45px'}}>Hobbies</h2>
                         <ul 
                             className="list-group" 
-                            style={{border: 'none', width: '350px', margin: '10px 0 0 8px'}}
+                            style={{border: 'none', width: 'auto', margin: '10px auto 0 auto'}}
                         >
                             <li id="hobbie" className="list-group-item">Cooking</li>
                             <li id="hobbie" className="list-group-item">Brazilian Jiu Jitsu Purple Belt</li>

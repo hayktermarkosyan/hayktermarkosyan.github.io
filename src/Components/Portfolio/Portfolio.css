@@ -1,88 +1,70 @@
+.projName {
+    color: white;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
 .projCardName {
     color: white;
     text-align: center;
     margin: 20px 0 20px 0;
 }
 
-.projName {
-    color: white;
-    text-align: center;
-    margin: 90px 0 70px 0;
+.projLeftCardStyles {
+    background-color: #553D67;
+    border: 2px solid white;
+    height: 500px;
 }
 
-.projCardStyles {
+.projRightCardStyles {
     background-color: #553D67;
     border: 2px solid white;
     height: 500px;
 }
 
 .calcImgStyles {
-    width: min-content;
+    width: auto;
     padding: 0;
-    margin: 0 0 0 55px;
+    margin: 0 auto 0 auto;
     height: 400px;
 }
 
 .movingDivsImgStyles {
     width: min-content;
     padding: 0;
-    margin: 0 0 0 50px;
+    margin: 0 auto 0 auto;
     height: 400px;
 }
 
 .imageCropperImgStyles {
     width: min-content;
     padding: 0;
-    margin: 0 0 0 7px;
+    margin: 0 auto 0 auto;
     height: 400px;
 }
 
 .toDoImgStyles {
     width: min-content;
     padding: 0;
-    margin: 0 0 0 60px;
+    margin: 0 auto 0 auto;
     height: 400px;
 }
 
 .timerImgStyles {
     width: min-content;
     padding: 0;
-    margin: 0 0 0 80px;
+    margin: 0 auto 0 auto;
     height: 400px;
 }
 
 .formComponentImgStyles {
     width: min-content;
     padding: 0;
-    margin: 0 0 0 180px;
+    margin: 0 auto 0 auto;
     height: 400px;
 }
 
-.card-text {
-    font-size: medium;
-}
-
-#skill {
-    background-color: #553D67;
-    color: white;
-    text-align: center;
-}
-
-.skillImg {
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
-}
-
-#hobbie {
-    background-color: #553D67;
-    color: white;
-    text-align: center;
-}
-
 .descrBtn {
-    margin: 0 0 0 0;
-    width: 40%;
     color: white;
     background-color: blueviolet;
     font-weight: bold;
@@ -97,12 +79,101 @@
     text-decoration: underline;
 }
 
-@media (max-width: 992px) {
-    .custom {
-        margin-bottom: 100px!important;
+@media screen and (max-width: 1280px) and (min-width: 960px) {
+    .projLeftCardStyles {
+        margin-bottom: 10px;
+    }
+
+    .projLeftCardStyles .projCardName {
+        margin: 40px 0 40px 0;
+    }
+
+    .projRightCardStyles .projCardName {
+        margin: 5px 0 5px 0;
+    }
+
+    .card-text {
+        font-size: 0.9rem!important;
+    }
+    
+    .calcImgStyles,
+    .movingDivsImgStyles,
+    .imageCropperImgStyles,
+    .toDoImgStyles,
+    .timerImgStyles,
+    .formComponentImgStyles {
+        width: 80%;
+        height: 320px;
     }
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 960px) and (min-width: 720px) {
+    .projLeftCardStyles {
+        margin-bottom: 10px;
+        height: 420px;
+    }
+
+    .projRightCardStyles {
+        height: 300px;
+    }
+
+    .projRightCardStyles .projCardName {
+        margin: 5px 0 5px 0;
+    }
+
+    .card-text {
+        font-size: 1rem!important;
+    }
     
+    .calcImgStyles,
+    .movingDivsImgStyles,
+    .imageCropperImgStyles,
+    .toDoImgStyles,
+    .timerImgStyles,
+    .formComponentImgStyles {
+        width: 80%;
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 720px) and (min-width: 540px) {
+    .projLeftCardStyles {
+        margin-bottom: 10px;
+        height: 420px;
+    }
+
+    .card-text {
+        font-size: 1.2rem!important;
+    }
+
+    .calcImgStyles,
+    .movingDivsImgStyles,
+    .imageCropperImgStyles,
+    .toDoImgStyles,
+    .timerImgStyles,
+    .formComponentImgStyles {
+        width: 80%;
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .projLeftCardStyles {
+        margin-bottom: 10px;
+        height: 420px;
+    }
+
+    .projRightCardStyles {
+        height: 430px;
+    }
+
+    .calcImgStyles,
+    .movingDivsImgStyles,
+    .imageCropperImgStyles,
+    .toDoImgStyles,
+    .timerImgStyles,
+    .formComponentImgStyles {
+        width: 80%;
+        height: 320px;
+    }
 }

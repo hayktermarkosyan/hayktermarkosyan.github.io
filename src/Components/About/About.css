@@ -40,14 +40,30 @@
     text-align: center;
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 1280px) and (min-width: 992px) {
     .custom {
         margin-bottom: 100px!important;
     }
+
+    .cardStyles {
+        width: 310px;
+    }
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 992px) and (min-width: 720px) {
     .cardStyles {
-        margin-left: 50px;
+        margin: 80px auto 50px auto;
+    }
+}
+
+@media screen and (max-width: 720px) and (min-width: 540px) {
+    .cardStyles {
+        margin: 80px auto 50px auto;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .cardStyles {
+        margin: 80px auto 50px auto;
     }
 }

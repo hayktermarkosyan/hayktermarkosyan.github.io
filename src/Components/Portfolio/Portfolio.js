@@ -1,36 +1,43 @@
 import './Portfolio.css';
+import 'animate.css';
 
 
 function Portfolio({projects}) {
     return ( 
         projects.map(project => {
             return (
-                <div className="container-fluid mb-2 custom" key={project.id}>
+                <div 
+                    className="container-fluid" 
+                    key={project.id} 
+                    style={project.name === 'Calculator' ? {marginTop: '70px'}: {marginTop: '10px'} || 
+                    project.name === 'Form Component' ? {marginBottom: '70px'}: {marginBottom: '0'}}
+                >
                         <div className="row">
                             <h1 className="projName">{project.name}</h1>
-                            <div className="col-lg-8">
-                                <div className="card projCardStyles">
-                                    <h2 className="projCardName">Project screenshot</h2>
-                                    <img 
-                                        src={project.screenShot.src} 
-                                        className={`card-img-top ${project.screenShot.styles}`} 
-                                        height={`${project.screenShot.height}`}
-                                        alt={`${project.screenShot.src}`}
-                                    />
+                                <div className="col-lg-8">
+                                    <div className="card projLeftCardStyles">
+                                        <h2 className="projCardName">Project screenshot</h2>
+                                        <img 
+                                            src={project.screenShot.src} 
+                                            className={`card-img-top ${project.screenShot.styles}`} 
+                                            height={`${project.screenShot.height}`}
+                                            alt={`${project.screenShot.src}`}
+                                        />
+                                    </div>
                                 </div>
-                            </div>
                             <div className="col-lg-4">
-                                <div className="card projCardStyles">
+                                <div className="card projRightCardStyles">
                                     <h2 className="projCardName">Description</h2>
                                     <div className="card-body">
                                         <p className="card-text">{project.description}</p>
                                     </div>
-                                    <div className="card-footer" style={{border: 'none', marginBottom: '10px'}}>
+                                    <div className="card-footer" style={{border: 'none', marginBottom: '10px', padding: '0'}}>
                                         <a 
                                            href={`${project.urlGit}`} 
                                            target="_blank" 
                                            rel="noreferrer"
                                            without="true"
+                                           style={{width: '40%', margin: '0 0 0 10px'}}
                                            className="btn descrBtn"
                                         >
                                             View code
@@ -40,7 +47,7 @@ function Portfolio({projects}) {
                                            target="_blank" 
                                            rel="noreferrer"
                                            without="true"
-                                           style={{width: '50%', marginLeft: '36px'}}
+                                           style={{width: '50%', margin: '0 10px 0 0', float: 'right'}}
                                            className="btn descrBtn"
                                         >
                                             View project
