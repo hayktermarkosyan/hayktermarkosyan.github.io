@@ -6,15 +6,15 @@
 
 .cardStyles {
     background-color: #553D67;
-    margin-top: 100px;
+    margin-top: 75px;
     width: 372px;
     border: 2px solid white;
 }
 
 .myImgStyles {
-    width: 200px;
+    width: 300px;
     height: 300px;
-    margin: 0 0 0 86px;
+    margin: 0 auto;
     padding: 0;
 }
 

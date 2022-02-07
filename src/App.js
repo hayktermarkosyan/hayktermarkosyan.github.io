@@ -1,12 +1,15 @@
-import { useState } from 'react';
+//import { useState } from 'react';
 import './App.css';
+
+import { Route, Routes } from "react-router-dom";
+
 import Footer from './Components/Footer/Footer';
-import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
+import Home from './Components/Home/Home';
 import Portfolio from './Components/Portfolio/Portfolio';
 import About from './Components/About/About';
 
-import calcScren from './Components/Portfolio/projectsScreenShots/calculatorScreenShot.png';
+import calcScreen from './Components/Portfolio/projectsScreenShots/calculatorScreenShot.png';
 import movingDivsScreen from './Components/Portfolio/projectsScreenShots/movingDivsScreenShot.png';
 import imgCropperScreen from './Components/Portfolio/projectsScreenShots/imageCropperScreenShot.png'
 import toDoScreen from './Components/Portfolio/projectsScreenShots/toDoScreenShot.png';
@@ -15,114 +18,35 @@ import formComponentScreen from './Components/Portfolio/projectsScreenShots/form
 
 function App() {
 
-  const [pages, setPages] = useState([
+  const pages = [
     {
       id: Math.random(),
       name: 'Home',
-      href: '#home',
+      to: '',
       isActive: 'active'
     },
     {
       id: Math.random(),
       name: 'Portfolio',
-      href: '#portfolio',
+      to: 'portfolio',
       isActive: ''
     },
     {
       id: Math.random(),
       name: 'About',
-      href: '#about',
+      to: 'about',
       isActive: ''
     }
-  ]);
-
-  const [isHomeOpen, setIsHomeOpen] = useState(true);
-  const [isPortfolioOpen, setIsPortfolioOpen] = useState(false);
-  const [isAboutOpen, setIsAboutOpen] = useState(false);
-
-  const handlePage = (pageName) => {
-    if (pageName === 'Home') {
-      setIsHomeOpen(true);
-      setIsPortfolioOpen(false);
-      setIsAboutOpen(false);
-      setPages([
-        {
-          id: Math.random(),
-          name: 'Home',
-          href: '#',
-          isActive: 'active'
-        },
-        {
-          id: Math.random(),
-          name: 'Portfolio',
-          href: '#portfolio',
-          isActive: ''
-        },
-        {
-          id: Math.random(),
-          name: 'About',
-          href: '#about',
-          isActive: ''
-        }
-      ])
-    } else if(pageName === 'Portfolio') {
-      setIsHomeOpen(false);
-      setIsPortfolioOpen(true);
-      setIsAboutOpen(false);
-      setPages([
-        {
-          id: Math.random(),
-          name: 'Home',
-          href: '#',
-          isActive: ''
-        },
-        {
-          id: Math.random(),
-          name: 'Portfolio',
-          href: '#portfolio',
-          isActive: 'active'
-        },
-        {
-          id: Math.random(),
-          name: 'About',
-          href: '#about',
-          isActive: ''
-        }
-      ])
-    } else {
-      setIsHomeOpen(false);
-      setIsPortfolioOpen(false);
-      setIsAboutOpen(true);
-      setPages([
-        {
-          id: Math.random(),
-          name: 'Home',
-          href: '#',
-          isActive: ''
-        },
-        {
-          id: Math.random(),
-          name: 'Portfolio',
-          href: '#portfolio',
-          isActive: ''
-        },
-        {
-          id: Math.random(),
-          name: 'About',
-          href: '#about',
-          isActive: 'active'
-        }
-      ])
-    }
-  };
+  ];
 
   const projects = [
     {
       id: Math.random(),
       name: 'Calculator',
+      url: 'https://hayktermarkosyan-calculatorapp.netlify.app',
       urlGit: 'https://github.com/hayktermarkosyan/calculator',
       screenShot: {
-        src: calcScren,
+        src: calcScreen,
         styles: 'calcImgStyles'
       },
       description: 'The application is executed on pure JS using the Bootstrap library for styling. The application is a classic calculator and performs the following actions: addition, subtraction, division, multiplication, square root of a number,  second square of a number. In this application there is also an ability to write mathematical expressions in a line. When calculating mathematical expressions written in a line, the application calculates the final value, taking into account the priority of mathematical operations. The application also has a backspace button to delete the last recorded character.'
@@ -130,6 +54,7 @@ function App() {
     {
       id: Math.random(),
       name: 'Moving Divs',
+      url: 'https://hayktermarkosyan-movingdivsapp.netlify.app',
       urlGit: 'https://github.com/hayktermarkosyan/movingDivs',
       screenShot: {
         src: movingDivsScreen,
@@ -140,6 +65,7 @@ function App() {
     {
       id: Math.random(),
       name: 'Image Cropper',
+      url: 'https://hayktermarkosyan-imagecropperapp.netlify.app',
       urlGit: 'https://github.com/hayktermarkosyan/ImgCropper',
       screenShot: {
         src: imgCropperScreen,
@@ -150,6 +76,7 @@ function App() {
     {
       id: Math.random(),
       name: 'To Do App',
+      url: 'https://hayktermarkosyan-todoapp.netlify.app',
       urlGit: 'https://github.com/hayktermarkosyan/toDo',
       screenShot: {
         src: toDoScreen,
@@ -160,6 +87,7 @@ function App() {
     {
       id: Math.random(),
       name: 'Timer App',
+      url: 'https://haykternarkosyan-timerapp.netlify.app',
       urlGit: 'https://github.com/hayktermarkosyan/timer_app',
       screenShot: {
         src: timerScreen,
@@ -170,6 +98,7 @@ function App() {
     {
       id: Math.random(),
       name: 'Form Component',
+      url: 'https://hayktermarkosyan-formcomponent.netlify.app',
       urlGit: 'https://github.com/hayktermarkosyan/formComponent',
       screenShot: {
         src: formComponentScreen,
@@ -183,21 +112,14 @@ function App() {
     <div>
       <Navbar 
         pages={pages}
-        handlePage={handlePage}
       />
 
-      {isHomeOpen && (
-        <Home />
-      )}
-
-      {isPortfolioOpen && (
-        <Portfolio projects={projects}/>
-      )}
-
-      {isAboutOpen && (
-        <About />
-      )}
-
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/portfolio" element={<Portfolio projects={projects}/>} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      
       <Footer />
     </div>
   );

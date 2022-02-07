@@ -6,7 +6,7 @@ import jsIcon from './skills_icons/js.png';
 import reactIcon from './skills_icons/react.png';
 import nodeIcon from './skills_icons/node-js.png';
 import tsIcon from './skills_icons/typescript.png';
-import myImg from './myImg.JPG';
+import myImg from './myImg.jpg';
 
 function About() {
     return (

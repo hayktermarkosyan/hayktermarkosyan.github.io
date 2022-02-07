@@ -1,6 +1,4 @@
 import './Portfolio.css';
-import 'animate.css';
-
 
 function Portfolio({projects}) {
     return ( 
