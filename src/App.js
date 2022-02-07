@@ -87,7 +87,7 @@ function App() {
     {
       id: Math.random(),
       name: 'Timer App',
-      url: 'https://haykternarkosyan-timerapp.netlify.app',
+      url: 'https://hayktermarkosyan-timerapp.netlify.app',
       urlGit: 'https://github.com/hayktermarkosyan/timer_app',
       screenShot: {
         src: timerScreen,
