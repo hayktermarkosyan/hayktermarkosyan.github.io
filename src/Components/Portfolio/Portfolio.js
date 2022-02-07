@@ -7,7 +7,7 @@ function Portfolio({projects}) {
                 <div 
                     className="container-fluid" 
                     key={project.id} 
-                    style={project.name === 'Calculator' ? {marginTop: '70px'}: {marginTop: '10px'} || 
+                    style={project.name === 'Calculator' ? {marginTop: '70px', marginBottom: '70px'}: {marginTop: '10px'} || 
                     project.name === 'Form Component' ? {marginBottom: '70px'}: {marginBottom: '0'}}
                 >
                         <div className="row">
