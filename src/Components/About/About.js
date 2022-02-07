@@ -13,6 +13,17 @@ function About() {
         <div className="container-fluid mb-5 custom">
             <div className="row">
                 <div className="col-lg-4">
+                    <div className="card cardStyles">
+                        <h2 className="aboutMe">Summary</h2>
+                        <img src={myImg} className="card-img-top myImgStyles" alt="myImg"/>
+                        <div className="card-body">
+                            <p className="card-text">
+                                Solution-focused Web Developer Intern with experience in web-based applications. Mentored by Senior JavaScript Web Developer, learning multiple systems and efficient development techniques. Assisted in the development and testing of web-based applications.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-4">
                     <div className="card cardStyles" style={{height: '560px'}}>
                         <h2 className="aboutMe">Skills</h2>
                         <ul 
@@ -48,17 +59,6 @@ function About() {
                             <li id="skill" className="list-group-item">Visual Studio, Web Storm Code Editors</li>
                             <li id="skill" className="list-group-item">Linux, Windows, and Mac OS</li>
                         </ul>
-                    </div>
-                </div>
-                <div className="col-lg-4">
-                    <div className="card cardStyles">
-                        <h2 className="aboutMe">Summary</h2>
-                        <img src={myImg} className="card-img-top myImgStyles" alt="myImg"/>
-                        <div className="card-body">
-                            <p className="card-text">
-                                Solution-focused Web Developer Intern with experience in web-based applications. Mentored by Senior JavaScript Web Developer, learning multiple systems and efficient development techniques. Assisted in the development and testing of web-based applications.
-                            </p>
-                        </div>
                     </div>
                 </div>
                 <div className="col-lg-4">

@@ -148,6 +148,11 @@
         height: 420px;
     }
 
+    .projRightCardStyles {
+        height: 500px;
+    }
+
+
     .projRightCardStyles .projRightCardName {
         margin: 5px 0 5px 0;
     }
@@ -174,7 +179,7 @@
     }
 
     .projRightCardStyles {
-        height: 430px;
+        height: 500px;
     }
 
     .projRightCardStyles .projRightCardName {
