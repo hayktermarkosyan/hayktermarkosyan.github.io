@@ -26,7 +26,7 @@ function Portfolio({projects}) {
                             <div className="col-lg-4">
                                 <div className="card projRightCardStyles">
                                     <h2 className="projRightCardName">Description</h2>
-                                    <div className="card-body" style={{padding: '0 16px'}}>
+                                    <div className="card-body">
                                         <p className="card-text">{project.description}</p>
                                     </div>
                                     <div className="card-footer" style={{border: 'none', marginBottom: '10px', padding: '0'}}>

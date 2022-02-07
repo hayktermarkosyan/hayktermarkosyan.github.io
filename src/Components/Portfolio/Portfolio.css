@@ -13,7 +13,7 @@
 .projRightCardName {
     color: white;
     text-align: center;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .projLeftCardStyles {
@@ -149,12 +149,12 @@
     }
 
     .projRightCardStyles {
-        height: 500px;
+        height: 550px;
     }
 
 
     .projRightCardStyles .projRightCardName {
-        margin: 5px 0 5px 0;
+        margin: 10px 0 10px 0;
     }
 
     .card-text {
@@ -179,11 +179,11 @@
     }
 
     .projRightCardStyles {
-        height: 500px;
+        height: 550px;
     }
 
     .projRightCardStyles .projRightCardName {
-        margin: 5px 0 5px 0;
+        margin: 10px 0 10px 0;
     }
 
     .calcImgStyles,
