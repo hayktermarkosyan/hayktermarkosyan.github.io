@@ -4,10 +4,16 @@
     margin: 0 0 10px 0;
 }
 
-.projCardName {
+.projLeftCardName {
     color: white;
     text-align: center;
-    margin: 10px 0 10px 0;
+    margin: 20px 0;
+}
+
+.projRightCardName {
+    color: white;
+    text-align: center;
+    margin: 10px 0;
 }
 
 .projLeftCardStyles {
@@ -84,11 +90,11 @@
         margin-bottom: 10px;
     }
 
-    .projLeftCardStyles .projCardName {
+    .projLeftCardStyles .projLeftCardName {
         margin: 40px 0 40px 0;
     }
 
-    .projRightCardStyles .projCardName {
+    .projRightCardStyles .projRightCardName {
         margin: 5px 0 5px 0;
     }
 
@@ -142,6 +148,10 @@
         height: 420px;
     }
 
+    .projRightCardStyles .projRightCardName {
+        margin: 5px 0 5px 0;
+    }
+
     .card-text {
         font-size: 1.2rem!important;
     }
@@ -165,6 +175,10 @@
 
     .projRightCardStyles {
         height: 430px;
+    }
+
+    .projRightCardStyles .projRightCardName {
+        margin: 5px 0 5px 0;
     }
 
     .calcImgStyles,

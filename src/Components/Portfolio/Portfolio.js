@@ -14,7 +14,7 @@ function Portfolio({projects}) {
                             <h1 className="projName">{project.name}</h1>
                                 <div className="col-lg-8">
                                     <div className="card projLeftCardStyles">
-                                        <h2 className="projCardName">Project screenshot</h2>
+                                        <h2 className="projLeftCardName">Project screenshot</h2>
                                         <img 
                                             src={project.screenShot.src} 
                                             className={`card-img-top ${project.screenShot.styles}`} 
@@ -25,7 +25,7 @@ function Portfolio({projects}) {
                                 </div>
                             <div className="col-lg-4">
                                 <div className="card projRightCardStyles">
-                                    <h2 className="projCardName">Description</h2>
+                                    <h2 className="projRightCardName">Description</h2>
                                     <div className="card-body" style={{padding: '0 16px'}}>
                                         <p className="card-text">{project.description}</p>
                                     </div>
