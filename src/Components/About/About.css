@@ -48,12 +48,20 @@
     .cardStyles {
         width: 310px;
     }
+
+    #skill {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 992px) and (min-width: 720px) {
     .cardStyles {
         margin: 80px auto 50px auto;
         width: 310px;
+    }
+
+    #skill {
+        font-size: 15px;
     }
 }
 
@@ -67,6 +75,10 @@
         width: 280px;
         height: 280px;
     }
+
+    #skill {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 540px) {
@@ -78,5 +90,9 @@
     .myImgStyles {
         width: 270px;
         height: 270px;
+    }
+
+    #skill {
+        font-size: 15px;
     }
 }
