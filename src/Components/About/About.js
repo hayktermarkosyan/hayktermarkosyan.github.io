@@ -28,7 +28,7 @@ function About() {
                         <h2 className="aboutMe">Skills</h2>
                         <ul 
                             className="list-group" 
-                            style={{border: 'none', width: 'auto', margin: '30px auto 0 auto'}}
+                            style={{border: 'none', width: 'auto', margin: '0 auto'}}
                         >
                             <li id="skill" className="list-group-item">
                             <img src={htmlIcon} className="skillImg" alt="htmlIcon"/>
