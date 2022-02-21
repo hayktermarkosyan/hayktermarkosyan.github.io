@@ -56,6 +56,8 @@ function About() {
                                 <img src={tsIcon} className="skillImg" alt="tsIcon"/>
                                 TypeScript
                             </li>
+                            <li id="skill" className="list-group-item">GraphQL</li>
+                            <li id="skill" className="list-group-item">Algorithms</li>
                             <li id="skill" className="list-group-item">Visual Studio, Web Storm Code Editors</li>
                             <li id="skill" className="list-group-item">Linux, Windows, and Mac OS</li>
                         </ul>
