@@ -93,10 +93,6 @@
     .projLeftCardStyles .projLeftCardName {
         margin: 40px 0;
     }
-
-    .card-text {
-        font-size: 0.9rem!important;
-    }
     
     .calcImgStyles,
     .movingDivsImgStyles,
@@ -109,18 +105,16 @@
     }
 }
 
+@media screen and (max-width: 992px) and (min-width: 720px) {
+    .projRightCardStyles {
+        height: 250px;
+    }
+}
+
 @media screen and (max-width: 960px) and (min-width: 720px) {
     .projLeftCardStyles {
         margin-bottom: 10px;
         height: 420px;
-    }
-
-    .projRightCardStyles {
-        height: 350px;
-    }
-
-    .card-text {
-        font-size: 1rem!important;
     }
     
     .calcImgStyles,
@@ -141,11 +135,7 @@
     }
 
     .projRightCardStyles {
-        height: 580px;
-    }
-
-    .card-text {
-        font-size: 1.2rem!important;
+        height: 270px;
     }
 
     .calcImgStyles,
@@ -166,7 +156,7 @@
     }
 
     .projRightCardStyles {
-        height: 580px;
+        height: 290px;
     }
 
     .calcImgStyles,
