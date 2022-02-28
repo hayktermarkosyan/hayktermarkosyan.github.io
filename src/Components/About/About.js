@@ -24,7 +24,7 @@ function About() {
                     </div>
                 </div>
                 <div className="col-lg-4">
-                    <div className="card cardStyles" style={{height: '560px'}}>
+                    <div className="card cardStyles">
                         <h2 className="aboutMe">Skills</h2>
                         <ul 
                             className="list-group" 
@@ -64,7 +64,7 @@ function About() {
                     </div>
                 </div>
                 <div className="col-lg-4">
-                    <div className="card cardStyles"  style={{height: '560px'}}>
+                    <div className="card cardStyles">
                         <h2 className="aboutMe">Education</h2>
                         <p 
                             className="card-text" 
