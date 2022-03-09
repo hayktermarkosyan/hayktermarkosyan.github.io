@@ -18,7 +18,7 @@ function About() {
                         <img src={myImg} className="card-img-top myImgStyles" alt="myImg"/>
                         <div className="card-body">
                             <p className="card-text">
-                                Solution-focused Web Developer with experience in web-based applications. Mentored by Mentored by expert JavaScript Web Developer, continue to research multiple systems and efficient development techniques.
+                                Solution-focused Web Developer with experience in web-based applications. Mentored by expert JavaScript Web Developer, continue to research multiple systems and efficient development techniques.
                             </p>
                         </div>
                     </div>
