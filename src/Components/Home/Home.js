@@ -6,7 +6,7 @@ function Home() {
             <hr/>
             <div className="col-md-8 offset-md-2">
                 <p>
-                    Hello, my name is Hayk and I am a beginner Front-end Developer living in Yerevan, Armenia
+                    Frontend Developer | Building Responsive and Accessible Web Experiences | Brazilian Jiu-Jitsu Brown Belt
                 </p>
             </div>
             <hr/>
