@@ -10,7 +10,6 @@ hr {
 
 .container {
     height: 100%;
-    margin-top: 250px;
 }
 
 @media (max-width: 992px) {
