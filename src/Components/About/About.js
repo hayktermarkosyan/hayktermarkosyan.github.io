@@ -76,7 +76,7 @@ function About() {
                             BS, Engineering Technology (Radio Engineering) 
                             Military Engineering University, Cherepovets, Russia |2010 – 2015|	
                         </p>
-                        <h2 className="aboutMe" style={{marginTop: '45px'}}>Experience</h2>
+                        <h2 className="aboutMe" style={{marginTop: '10px'}}>Experience</h2>
                         <p
                             className="card-text"
                             style={{border: '1px solid rgba(0,0,0,.125)',
@@ -98,7 +98,7 @@ function About() {
                             Major (August, 2015 – Present)
                             MOD OF RA
                         </p>
-                        <h2 className="aboutMe" style={{marginTop: '45px'}}>Hobbies</h2>
+                        <h2 className="aboutMe" style={{marginTop: '10px'}}>Hobbies</h2>
                         <ul 
                             className="list-group" 
                             style={{border: 'none', width: 'auto', margin: '10px auto 0 auto'}}
