@@ -1,5 +1,5 @@
 .custom {
-    margin-top: 100px!important;
+    margin-top: 100px;
 }
 
 .aboutMe {
@@ -60,6 +60,10 @@
 }
 
 @media screen and (max-width: 992px) and (min-width: 720px) {
+    .custom {
+        margin-top: 0;
+    }
+
     .cardStyles {
         margin: 80px auto 50px auto;
         width: 310px;
@@ -71,6 +75,10 @@
 }
 
 @media screen and (max-width: 720px) and (min-width: 540px) {
+    .custom {
+        margin-top: 0;
+    }
+
     .cardStyles {
         margin: 80px auto 50px auto;
         width: 300px;
@@ -87,6 +95,10 @@
 }
 
 @media screen and (max-width: 540px) {
+    .custom {
+        margin-top: 0;
+    }
+
     .cardStyles {
         margin: 80px auto 50px auto;
         width: 300px;
