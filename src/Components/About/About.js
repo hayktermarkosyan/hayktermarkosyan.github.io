@@ -10,7 +10,7 @@ import myImg from './myImg.jpg';
 
 function About() {
     return (
-        <div className="container-fluid mb-5 custom">
+        <div className="container mb-5 custom">
             <div className="row">
                 <div className="col-lg-4">
                     <div className="card cardStyles">
